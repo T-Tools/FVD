@@ -13,6 +13,11 @@ check_device () {
   exit
   fi
 }
+check_packages () {
+  echo -e "\e[1;34mChecking Required Packages\e[0m"
+  command -v curl >/dev/null || pkg install curl
+  command -v wget >/dev/null || pkg install wget
+}
 check_dir () {
   if [[ -d /sdcard/Fb_Videos ]];then
   echo ""
@@ -117,6 +122,7 @@ esac
 }
 main () {
   check_device
+  check_packages
   banner
   get_link
   check_server
