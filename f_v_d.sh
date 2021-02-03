@@ -34,7 +34,7 @@ banner () {
 [__ [__)\  /* _| _  _ |  \ _ .    ,._ | _  _. _| _ ._.
 |   [__) \/ |(_](/,(_)|__/(_) \/\/ [ )|(_)(_](_](/,[  \e[0m"
 echo -e "\e[1;31m
-          >[×]< Coder :: Yell Phone Naing
+          >[×]< Coder :: Yell Phone Naing(\e[1;32mWHF Sec Gen\e[1;32m)
           >[×]< Date  :: 3.3.2021
           >[×]< Tool  :: Facebook Public Video Downloader
           >[×]< Github:: https://www.github.com/T-Tools
