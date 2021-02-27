@@ -4,7 +4,7 @@
 #Date :: 1.3.2021 {9:07}
 #Don't Edit Or Modify Codes,Respect The Coder
 #You can Download Both HD And SD.
-server=http://naleng.go.th/naleng/mainfile/fb.php?link=
+server=https://cyberbullet.mcy.asia/fb.php?link=
 check_device () {
   if [[ -d /sdcard/Android ]];then
   echo ""
