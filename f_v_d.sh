@@ -4,7 +4,7 @@
 #Date :: 1.3.2021 {9:07}
 #Don't Edit Or Modify Codes,Respect The Coder
 #You can Download Both HD And SD.
-server=http:/himcaht.irg/api?link=
+server="http://himchat.org/api?link="
 check_device () {
   if [[ -d /sdcard/Android ]];then
   echo ""
@@ -60,13 +60,13 @@ get_link () {
   fi
 }
 server_fail () {
-  echo "\e[1;31mCan't Connect To Server,Please Try Again Later\e[0m"
+  echo -e "\e[1;31mCan't Connect To Server,Please Try Again Later\e[0m"
   exit
 }
 check_server () {
   echo -e "\e[1;34mChecking Server Status\e[0m"
-  status_code=$(curl -Iks $server | head -n 1 | grep -o '[200]\+')
-  if [[ $status_code == "200" ]];then
+  status_code=$(curl -A "Chrome" -Lks $server)
+  if echo $status_code | grep -q "provide";then
   echo -e "\e[1;32mOk,Server Status Is Online\e[0m"
   else
   server_fail
