@@ -4,7 +4,7 @@
 #Date :: 1.3.2021 {9:07}
 #Don't Edit Or Modify Codes,Respect The Coder
 #You can Download Both HD And SD.
-server=https://cyberbullet.mcy.asia/fb.php?link=
+server=http:/himcaht.irg/api?link=
 check_device () {
   if [[ -d /sdcard/Android ]];then
   echo ""
